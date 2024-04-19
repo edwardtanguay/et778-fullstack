@@ -20,7 +20,7 @@ function App() {
 			<p>Here are {frameworks.length} frameworks:</p>
 			<ul>
 				{frameworks.map((framework, index) => {
-					return <li key={index}>{framework.title}</li>;
+					return <li key={index}><a href={framework.url}>{framework.title}</a></li>;
 				})}
 			</ul>
 		</>
